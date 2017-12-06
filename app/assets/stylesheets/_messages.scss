@@ -2,7 +2,7 @@
 //   height: 100%;
 // }
 .wrapper{
-	min-width: 1440px;
+	min-width: 1400px;
 }
 // .information{
 // 	height: 50px;
@@ -12,11 +12,11 @@
 // 	padding: 0 0 0 40px
 // }
 .content{
-	height:910px ;
+	height:830px ;
 	width:100% ;
 	.left_space {
 		width: 260px;
-		height: 910px;
+		height: 830px;
 		float: left;
 		.left_space__over {
 			font-size: 16px;
@@ -34,7 +34,7 @@
 		.left_space__under {
 			background-color: #2f3e51;
 			width: 260px;
-			height: 810px;
+			height: 730px;
 			padding: 0 20px;
 			h3{
 				color: white;
@@ -49,13 +49,13 @@
 		}
 	}
 	.white_space {
-		width: 1140px ;
-		height: 910px;
+		width: 1100px ;
+		height: 830px;
 		float: left;
 		background-color: white;
 		.white_space__above {
 			height: 100px;
-			width: 1140px;
+			width: 1100px;
 			// background-color: #AAAAAA;
 			padding: 0 40px;
 			h3{
@@ -71,8 +71,8 @@
 		}
 		.white_space__center {
 			border: #eeeeee;
-			height: 720px;
-			width: 1140px;
+			height: 640px;
+			width: 1100px;
 			background-color: #F8F8FF;
 			padding: 0 40px;
 			opacity: 0.7;
@@ -94,12 +94,12 @@
 		}
 		.input_message {
 			height: 90px;
-			width: 1140px;
+			width: 1100px;
 			background-color: #AAAAAA;
 			padding: 0 40px;
 			.blank_of_space {
 				height: 50px;
-				width: 75%;
+				width: 80%;
 				background-color: white;
 				float: left;
 				margin: 20px 10px;
