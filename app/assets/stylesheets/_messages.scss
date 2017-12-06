@@ -4,13 +4,13 @@
 .wrapper{
 	min-width: 1440px;
 }
-.information{
-	height: 50px;
-	background-color: #38AEF0;
-	width: 100%;
-	text-align: center;
-	padding: 0 0 0 40px
-}
+// .information{
+// 	height: 50px;
+// 	background-color: #38AEF0;
+// 	width: 100%;
+// 	text-align: center;
+// 	padding: 0 0 0 40px
+// }
 .content{
 	height:910px ;
 	width:100% ;
@@ -18,7 +18,7 @@
 		width: 260px;
 		height: 910px;
 		float: left;
-		.left_over_space{
+		.left_space__over {
 			font-size: 16px;
 	 		font-weight: bold;
 			background-color: #253141;
@@ -31,7 +31,7 @@
 				padding-right: 90px;
 			}
 		}
-		.left_under_space {
+		.left_space__under {
 			background-color: #2f3e51;
 			width: 260px;
 			height: 810px;
@@ -53,7 +53,7 @@
 		height: 910px;
 		float: left;
 		background-color: white;
-		.address_above {
+		.white_space__above {
 			height: 100px;
 			width: 1140px;
 			// background-color: #AAAAAA;
@@ -69,11 +69,11 @@
 				padding: 0 0 18px 0;
 			}
 		}
-		.chat_center_space {
+		.white_space__center {
 			border: #eeeeee;
 			height: 720px;
 			width: 1140px;
-			background-color: #AAAAAA;
+			background-color: #F8F8FF;
 			padding: 0 40px;
 			opacity: 0.7;
 			h3{
@@ -97,7 +97,7 @@
 			width: 1140px;
 			background-color: #AAAAAA;
 			padding: 0 40px;
-			.blankofspace {
+			.blank_of_space {
 				height: 50px;
 				width: 75%;
 				background-color: white;
