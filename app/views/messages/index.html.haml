@@ -7,12 +7,8 @@
 				%h3 foggy-nia
 				%span.fa.fa-camera-retro
 			.left_space__under
-				%h3 グループ名
-				%p name
-				%h3 グループ名
-				%p name
-				%h3 グループ名
-				%p name
+				- @groups.each do |group|
+					%h2= group.group_name
 		.white_space
 			.white_space__above
 				%h2 sample グループ
