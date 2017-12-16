@@ -114,6 +114,45 @@
     background-color: #38aef0;
     border: 0;
   }
-}// Place all the styles related to the groups controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+}
+.wrapper{
+  min-width: 1400px;
+}
+.content{
+  height:830px ;
+  width:100% ;
+  .left_space {
+    width: 260px;
+    height: 830px;
+    float: left;
+    .left_space__over {
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #253141;
+      height: 100px;
+      width: 260px;
+      padding: 0 20px;
+      h3{
+        color: white;
+        display: inline-block;
+        padding-right: 90px;
+      }
+    }
+    .left_space__under {
+      background-color: #2f3e51;
+      width: 260px;
+      height: 730px;
+      padding: 0 20px;
+      h3{
+        color: white;
+        font-size: 15px;
+        padding: 20px 0 5px 0;
+      }
+      p{
+        color: white;
+        font-size: 11px;
+        padding: 0 0 20px 0;
+      }
+    }
+  }
+}

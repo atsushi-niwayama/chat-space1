@@ -1,0 +1,10 @@
+.wrapper
+	.content.clearfix
+		.left_space
+			.left_space__over
+				%h3 foggy-nia
+				%span.fa.fa-camera-retro
+			.left_space__under
+				- @groups.each do |group|
+					%h2= group.group_name
+					%P まだメッサージはありません。
