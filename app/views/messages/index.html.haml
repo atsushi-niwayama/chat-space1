@@ -1,18 +1,13 @@
 .wrapper
-	-#.information
-		-#%h5 チャットグループが作成された
 	.content.clearfix
 		.left_space
 			.left_space__over
 				%h3 foggy-nia
 				%span.fa.fa-camera-retro
 			.left_space__under
-				%h3 グループ名
-				%p name
-				%h3 グループ名
-				%p name
-				%h3 グループ名
-				%p name
+				- @groups.each do |group|
+					%h2= group.group_name
+					%P まだメッサージはありません。
 		.white_space
 			.white_space__above
 				%h2 sample グループ
