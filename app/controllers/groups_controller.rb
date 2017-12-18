@@ -1,5 +1,6 @@
 class GroupsController < ApplicationController
-  
+    before_action :login_check
+
   def index
 	 @groups = current_user.groups
   end
@@ -20,14 +21,16 @@ class GroupsController < ApplicationController
 
 	def edit
 		@group = Group.find(params[:id])
-	end	
-
-	
+	end
 
 	private
 	
 	def group_params
 		params.require(:group).permit(:group_name, { :user_ids => []})
 	end
-	
+
+	def login_check
+		redirect_to '/users/sign_in' unless user_signed_in?
+	end
 end
+
