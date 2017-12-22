@@ -22,9 +22,9 @@ class GroupsController < ApplicationController
 	def edit
 		@group = Group.find(params[:id])
 	end
-
+  
 	private
-	
+
 	def group_params
 		params.require(:group).permit(:group_name, { :user_ids => []})
 	end
@@ -33,4 +33,3 @@ class GroupsController < ApplicationController
 		redirect_to '/users/sign_in' unless user_signed_in?
 	end
 end
-

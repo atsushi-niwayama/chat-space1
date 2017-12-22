@@ -5,24 +5,27 @@
 				%h3 foggy-nia
 				%span.fa.fa-camera-retro
 			.left_space__under
-				- @groups.each do |group|
-					%h2= group.group_name
-					%P まだメッサージはありません。
+				- if @groups
+					- @groups.each do |group|
+						%h2= group.group_name
+						%P まだメッサージはありません。
 		.white_space
 			.white_space__above
-				%h2 sample グループ
-				%p member JOJO
+				- if @groups
+					- @groups.each do |group|
+						%h2　sample name
+						%p memberの名前
+						.group_edit_button
+							= link_to "edit", "/groups/#{group.id}/edit"
 			.white_space__center
-				%h3 ryousukemaehara 
-				%span 2016/10/10
-				%p なるほど
-				%h3 ryousukemaehara
-				%span 2016/10/11
-				%p コマンドでエンターを送信したい感はある
-				%h3 ryousukemaehara
-				%span 2016/10/12
-				%p お腹すいた
+				- if @messages
+					- @messages.each do |message|
+						%h3= message.user.name
+						%span= message.created_at
+						%p= message.text
 			.input_message
-				.blank_of_space
-				.send_button
-					%p send
+				- if @group
+					.blank_of_space
+						= form_tag("/groups/#{@group.id}/messages", method: :post) do
+							%textarea{cols: "100", name: "text", row: 1}
+							%input{type: "submit", value: "SENT" }
